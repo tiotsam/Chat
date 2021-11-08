@@ -27,5 +27,10 @@ services:
             tags:
                 - { name: kernel.event_listener, event: lexik_jwt_authentication.on_authentication_success, method: onAuthenticationSuccessResponse }
     
+    # chat_api.event.update_user_listener:
+    #     class: App\EventListener\UpdateUserListener
+    #     tags:
+    #         -  {}
+    
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones

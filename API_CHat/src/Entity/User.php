@@ -23,13 +23,13 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
      */
-    #[Groups(['read_room'])]
+    #[Groups(['read_room','read_rooms'])]
     private $id;
 
     /**
      * @ORM\Column(type="string", length=180, unique=true)
      */
-    #[Groups(['read_room'])]
+    #[Groups(['read_room','read_rooms'])]
     private $pseudo;
 
     /**
